@@ -151,7 +151,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			getPublicEvents: async (page) => {
 				const accessToken = localStorage.getItem("token");
-				const radius = 1000;
+				const radius = 10000000;
 				return new Promise((resolve, reject) => {
 					if (navigator.geolocation) {
 						navigator.geolocation.getCurrentPosition(async (position) => {
